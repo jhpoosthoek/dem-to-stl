@@ -50,7 +50,7 @@ def read_data(f):
     data         = list()
     blocksize    = 1024 # TODO: Is 1024 a standard block size for USGS?
     headerlength = 144  # True for all USGS DEM
-    import pdb; pdb.set_trace()
+    # import pdb; pdb.set_trace()
     f.seek(blocksize + 12)
     width        = int(f.read(6).strip())
     metadata     = read_metadata(f)
